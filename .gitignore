@@ -30,7 +30,7 @@
 .pub-cache/
 .pub/
 /build/
-**lib/auth
+/lib/auth/
 
 
 # Web related
