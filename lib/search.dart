@@ -24,7 +24,6 @@ class _SearchState extends State<Search> {
         'https://api.pexels.com/v1/search?query=$query&per_page=45&page=1',
         headers: {"Authorization": apiKey});
 
-//    print(response.body.toString());
     Map<String, dynamic> jsonData = jsonDecode(response.body);
     jsonData["photos"].forEach((element) {
       WallPaperModel wallPaperModel = new WallPaperModel();
