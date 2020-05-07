@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
 
   getTrendingWallpapers() async {
     var response = await http.get(
-        'https://api.pexels.com/v1/curated?per_page=15&page=1',
+        'https://api.pexels.com/v1/curated?per_page=95&page=2',
         headers: {"Authorization": apiKey});
 
 //    print(response.body.toString());
@@ -52,6 +52,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         title: brandName(),
         elevation: 0.0,
       ),

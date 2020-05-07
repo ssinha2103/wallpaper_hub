@@ -20,7 +20,7 @@ class _CategoryState extends State<Category> {
 
   getSearchWallpapers(String query) async {
     var response = await http.get(
-        'https://api.pexels.com/v1/search?query=$query&per_page=15&page=1',
+        'https://api.pexels.com/v1/search?query=$query&per_page=45&page=1',
         headers: {"Authorization": apiKey});
 
 //    print(response.body.toString());
